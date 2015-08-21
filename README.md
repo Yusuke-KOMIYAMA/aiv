@@ -1,4 +1,7 @@
-# regmed
+# NOTICE
+This repository only distributes a source code of Annotation Image Viewer for a developer. If you are an end user that need the detail information about AIV tools, please visit our home page.
+[RegMed Home](http://regmed.hgc.jp)
+
 # Annotation Image Viewer
 Annotation Image Viewer (AIV) is a Web-based image annotation tool. It can store a high-resolution figure, and view scale-free slide smooth. This tool includes a rich user interface for graphical annotation such as shape of a line, circle, rectangle and color pallet. This viewer has an easy administration tools for user management. Additionally you can describe a annotated information for an image as metadata.
 ![Annotation Image Viewer](https://regmed.hgc.jp/figure/coverview1.png "Annotation Image Viewer")
@@ -169,7 +172,8 @@ $ docker stop CONTAINER_ID
 $ export $(boot2docker shellinit)
 ```
 
-* C'-2. Download the TAR file of container image of annotation image viewer from our Web site.https://regmed.hgc.jp/docker/AnnotationImageViewer_latest.tar
+* C'-2. Download the TAR file of container image of annotation image viewer from our Web site.
+https://regmed.hgc.jp/docker/AnnotationImageViewer_latest.tar
 
 * C'-3. Load the TAR file in to your docker.
 
@@ -202,13 +206,12 @@ $ docker ps -a
 ```
 
 * C'-8. Accese http://DOCKER_HOST/binder/login/ via a browser. 
-
-Default: http://192.168.59.103/binder/login/
+ * Default: http://192.168.59.103/binder/login/
 
 * C'-9. Default user accounts were registered as each user roles. 
-Administrator: (ID:admin, Password:adminadmin)
-User: (ID:user1, Password:useruser)
-Supervisor: (ID:demo1, Password:demodemo)
+ * Administrator: (ID:admin, Password:adminadmin)
+ * User: (ID:user1, Password:useruser)
+ * Supervisor: (ID:demo1, Password:demodemo)
 
 * C'-10. Set up the CONTAINER ID into an option parameter of docker stop command at the termination of a container.
 
