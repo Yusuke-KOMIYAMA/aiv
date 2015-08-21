@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {
+	background: #FFFFAA;
+	color: #006600;
+	margin: 0;
+}
+
+#header {
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+#content {
+	background: #EEFFEE;
+	color: #009900;
+	padding: 10px 20px 40px 20px;
+}
+
+#footer {
+	text-align: right;
+}
+
+h1 {
+	text-size: 12pt;
+}

@@ -1,0 +1,251 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-07-13 11:24+0900\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: View/Layouts/default.ctp:17
+#: View/Layouts/error.ctp:17
+#: View/Layouts/login.ctp:17
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: View/Layouts/default.ctp:18
+#: View/Layouts/login.ctp:18
+msgid "CakePHP %s"
+msgstr ""
+
+#: View/Pages/home.ctp:14
+msgid "Release Notes for CakePHP %s."
+msgstr ""
+
+#: View/Pages/home.ctp:16
+msgid "Read the changelog"
+msgstr ""
+
+#: View/Pages/home.ctp:25
+msgid "URL rewriting is not properly configured on your server."
+msgstr ""
+
+#: View/Pages/home.ctp:34
+msgid "Your version of PHP is 5.2.8 or higher."
+msgstr ""
+
+#: View/Pages/home.ctp:38
+msgid "Your version of PHP is too low. You need PHP 5.2.8 or higher to use CakePHP."
+msgstr ""
+
+#: View/Pages/home.ctp:47
+msgid "Your tmp directory is writable."
+msgstr ""
+
+#: View/Pages/home.ctp:51
+msgid "Your tmp directory is NOT writable."
+msgstr ""
+
+#: View/Pages/home.ctp:61
+msgid "The %s is being used for core caching. To change the config edit %s"
+msgstr ""
+
+#: View/Pages/home.ctp:65
+msgid "Your cache is NOT working. Please check the settings in %s"
+msgstr ""
+
+#: View/Pages/home.ctp:75
+msgid "Your database configuration file is present."
+msgstr ""
+
+#: View/Pages/home.ctp:80
+msgid "Your database configuration file is NOT present."
+msgstr ""
+
+#: View/Pages/home.ctp:82
+msgid "Rename %s to %s"
+msgstr ""
+
+#: View/Pages/home.ctp:107
+msgid "CakePHP is able to connect to the database."
+msgstr ""
+
+#: View/Pages/home.ctp:111
+msgid "CakePHP is NOT able to connect to the database."
+msgstr ""
+
+#: View/Pages/home.ctp:124
+msgid "PCRE has not been compiled with Unicode support."
+msgstr ""
+
+#: View/Pages/home.ctp:126
+msgid "Recompile PCRE with Unicode support by adding <code>--enable-unicode-properties</code> when configuring"
+msgstr ""
+
+#: View/Pages/home.ctp:135
+msgid "DebugKit plugin is present"
+msgstr ""
+
+#: View/Pages/home.ctp:139
+msgid "DebugKit is not installed. It will help you inspect and debug different aspects of your application."
+msgstr ""
+
+#: View/Pages/home.ctp:141
+msgid "You can install it from %s"
+msgstr ""
+
+#: View/Pages/home.ctp:147
+msgid "Editing this Page"
+msgstr ""
+
+#: View/Pages/home.ctp:150
+msgid "To change the content of this page, edit: %s.<br />\nTo change its layout, edit: %s.<br />\nYou can also add some CSS styles for your pages at: %s."
+msgstr ""
+
+#: View/Pages/home.ctp:157
+msgid "Getting Started"
+msgstr ""
+
+#: View/Pages/home.ctp:161
+msgid "New"
+msgstr ""
+
+#: View/Pages/home.ctp:161
+msgid "CakePHP 2.0 Docs"
+msgstr ""
+
+#: View/Pages/home.ctp:170
+msgid "The 15 min Blog Tutorial"
+msgstr ""
+
+#: View/Pages/home.ctp:177
+msgid "Official Plugins"
+msgstr ""
+
+#: View/Pages/home.ctp:182
+msgid "provides a debugging toolbar and enhanced debugging tools for CakePHP applications."
+msgstr ""
+
+#: View/Pages/home.ctp:186
+msgid "contains various localized validation classes and translations for specific countries"
+msgstr ""
+
+#: View/Pages/home.ctp:191
+msgid "More about CakePHP"
+msgstr ""
+
+#: View/Pages/home.ctp:193
+msgid "CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC."
+msgstr ""
+
+#: View/Pages/home.ctp:196
+msgid "Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility."
+msgstr ""
+
+#: View/Pages/home.ctp:201
+msgid "The Rapid Development Framework"
+msgstr ""
+
+#: View/Pages/home.ctp:202
+msgid "CakePHP Documentation"
+msgstr ""
+
+#: View/Pages/home.ctp:203
+msgid "Your Rapid Development Cookbook"
+msgstr ""
+
+#: View/Pages/home.ctp:204
+msgid "CakePHP API"
+msgstr ""
+
+#: View/Pages/home.ctp:205
+msgid "Quick API Reference"
+msgstr ""
+
+#: View/Pages/home.ctp:206
+msgid "The Bakery"
+msgstr ""
+
+#: View/Pages/home.ctp:207
+msgid "Everything CakePHP"
+msgstr ""
+
+#: View/Pages/home.ctp:208
+msgid "CakePHP Plugins"
+msgstr ""
+
+#: View/Pages/home.ctp:209
+msgid "A comprehensive list of all CakePHP plugins created by the community"
+msgstr ""
+
+#: View/Pages/home.ctp:210
+msgid "CakePHP Community Center"
+msgstr ""
+
+#: View/Pages/home.ctp:211
+msgid "Everything related to the CakePHP community in one place"
+msgstr ""
+
+#: View/Pages/home.ctp:212
+msgid "CakePHP Google Group"
+msgstr ""
+
+#: View/Pages/home.ctp:213
+msgid "Community mailing list"
+msgstr ""
+
+#: View/Pages/home.ctp:215
+msgid "Live chat about CakePHP"
+msgstr ""
+
+#: View/Pages/home.ctp:216
+msgid "CakePHP Code"
+msgstr ""
+
+#: View/Pages/home.ctp:217
+msgid "Find the CakePHP code on GitHub and contribute to the framework"
+msgstr ""
+
+#: View/Pages/home.ctp:218;219
+msgid "CakePHP Issues"
+msgstr ""
+
+#: View/Pages/home.ctp:220;221
+msgid "CakePHP Roadmaps"
+msgstr ""
+
+#: View/Pages/home.ctp:222
+msgid "Training"
+msgstr ""
+
+#: View/Pages/home.ctp:223
+msgid "Join a live session and get skilled with the framework"
+msgstr ""
+
+#: View/Pages/home.ctp:224
+msgid "CakeFest"
+msgstr ""
+
+#: View/Pages/home.ctp:225
+msgid "Don't miss our annual CakePHP conference"
+msgstr ""
+
+#: View/Pages/home.ctp:226
+msgid "Cake Software Foundation"
+msgstr ""
+
+#: View/Pages/home.ctp:227
+msgid "Promoting development related to CakePHP"
+msgstr ""
+
+#: webroot/test.php:93
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+

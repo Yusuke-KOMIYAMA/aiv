@@ -1,0 +1,8 @@
+.project
+.buildpath
+.settings/*
+.externalToolBuilders/*
+src/vendor/imagine
+src/vendor/symfony
+build
+phpunit.xml

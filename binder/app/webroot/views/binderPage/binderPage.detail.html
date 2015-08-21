@@ -1,0 +1,384 @@
+
+        <div id="page-contents-inner">
+            <div id="breadcrumb_list">
+                <ol class="breadcrumb">
+                    <li ui-sref="home" style="cursor:pointer;" translate="binder.breadcrumb"></li>
+                    <li ng-if="VS.sharedStore.returnView == 'home.binderPage'" ui-sref="home.binderPage" style="cursor:pointer;" translate="binderPage.breadcrumb"></li>
+                    <li ng-if="VS.sharedStore.returnView == 'home.originalPage'" ui-sref="home.originalPage" style="cursor:pointer;" translate="originalPage.breadcrumb"></li>
+                    <li ng-if="VS.sharedStore.returnView == 'home.timeline'" ui-sref="home.timeline" style="cursor:pointer;" translate="timeline.breadcrumb"></li>
+                    <li translate="binderPageDetail.breadcrumb"></li>
+                </ol>
+            </div>
+
+            <div class="edit_pgBox clearfix">
+
+                <div id="leftMenu">
+
+                    <div class="left_menu">
+
+                        <div class="antMenu">
+                            <img src="../app/webroot/img/hensyu_img01.png" width="100%" border="0">
+                        </div>
+
+                        <div aria-label="" role="group" class="btn-group-hensyu">
+                            <ul id="editButtonGroup" class="clearfix">
+                                <li>
+                                    <button
+                                        id="undoButton" class="btn btn-default" type="button"
+                                        ng-disabled="VS.imageViewer.edit.history.undoStack.length == 0 || VS.imageViewer.edit.isViewOverlay == false"
+                                        translate="binderPageDetail.annotation.undo">
+                                    </button>
+                                </li>
+                                <li>
+                                    <button
+                                        id="redoButton" class="btn btn-default grpMargin" type="button"
+                                        ng-disabled="VS.imageViewer.edit.history.redoStack.length == 0 || VS.imageViewer.edit.isViewOverlay == false"
+                                        translate="binderPageDetail.annotation.redo">
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <div class="btn-group btn-left">
+                                        <button
+                                            type="button"
+                                            id="figureButton"
+                                            class="btn btn-default dropdown-toggle active"
+                                            data-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <span ng-if="isMove()"><span translate="binderPageDetail.annotation.control.move"></span> <i class="fa fa-arrows-alt fa-fw"></i></span>
+                                            <span ng-if="isEllipse()"><span translate="binderPageDetail.annotation.control.ellipse"></span>図形：丸<i class="fa fa-circle-o fa-fw"></i></span>
+                                            <span ng-if="isRect()"><span translate="binderPageDetail.annotation.control.rect"></span>図形：四角<i class="fa fa-square-o fa-fw"></i></span>
+                                            <span ng-if="isArrow()"><span translate="binderPageDetail.annotation.control.arrow"></span>図形：矢印：<i class="fa fa-long-arrow-left fa-fw"></i></span>
+                                            <span ng-if="isLine()"><span translate="binderPageDetail.annotation.control.line"></span>図形：線<i class="fa fa-minus fa-fw"></i></span>
+                                            <span ng-if="isAnnotate()"><span translate="binderPageDetail.annotation.control.comment"></span>　<i class="fa fa-pencil fa-fw"></i></span>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><button id="moveButton" class="btn btn-default" type="button"><span translate="binderPageDetail.annotation.control.move"></span> <i class="fa fa-arrows-alt fa-fw"></i></button></li>
+                                            <li><button id="circleButton" class="btn btn-default" type="button"><span translate="binderPageDetail.annotation.control.ellipse"></span><i class="fa fa-circle-o fa-fw"></i></button></li>
+                                            <li><button id="rectButton" class="btn btn-default" type="button"><span translate="binderPageDetail.annotation.control.rect"></span><i class="fa fa-square-o fa-fw"></i></button></li>
+                                            <li><button id="arrowButton" class="btn btn-default" type="button"><span translate="binderPageDetail.annotation.control.arrow"></span><i class="fa fa-long-arrow-left fa-fw"></i></button></li>
+                                            <li><button id="lineButton" class="btn btn-default" type="button"><span translate="binderPageDetail.annotation.control.line"></span><i class="fa fa-minus fa-fw"></i></button></li>
+                                            <li><button id="annotationButton" class="btn btn-default" type="button"><span translate="binderPageDetail.annotation.control.comment"></span>　<i class="fa fa-pencil fa-fw"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="btn-group btn-left">
+                                        <button
+                                            type="button"
+                                            id="strokeButton"
+                                            class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            <span ng-if="isSolid()"><span translate="binderPageDetail.annotation.line.solid"></span><i class="fa fa-minus fa-fw"></i></span>
+                                            <span ng-if="isDotted()"><span translate="binderPageDetail.annotation.line.dotted"></span><i class="fa fa-ellipsis-h fa-fw"></i></span>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><button id="solidButton" class="btn btn-default" type="button"><span translate="binderPageDetail.annotation.line.solid"></span><i class="fa fa-minus fa-fw"></i></button></li>
+                                            <li><button id="dottedButton" class="btn btn-default" type="button"><span translate="binderPageDetail.annotation.line.dotted"></span><i class="fa fa-ellipsis-h fa-fw"></i></button></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="btn-group btn-left">
+                                        <button
+                                            type="button"
+                                            id="strokeWidthButton"
+                                            class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <span ng-if="isBold()" translate="binderPageDetail.annotation.line.bold"></span>
+                                            <span ng-if="isNormal()" translate="binderPageDetail.annotation.line.normal"></span>
+                                            <span ng-if="isNarrow()" translate="binderPageDetail.annotation.line.narrow"></span>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><button id="strokeWidthBoldButton" class="btn btn-default" type="button" translate="binderPageDetail.annotation.line.bold"></button></li>
+                                            <li><button id="strokeWidthNormalButton" class="btn btn-default" type="button" translate="binderPageDetail.annotation.line.normal"></button></li>
+                                            <li><button id="strokeWidthNarrowButton" class="btn btn-default" type="button" translate="binderPageDetail.annotation.line.narrow"></button></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="btn-group btn-left">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            <span translate="binderPageDetail.annotation.pattern.title"></span><i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><button id="annotationPattern1Button" class="btn btn-default" type="button" translate="binderPageDetail.annotation.pattern.01"></button></li>
+                                            <li><button id="annotationPattern2Button" class="btn btn-default" type="button" translate="binderPageDetail.annotation.pattern.02"></button></li>
+                                            <li><button id="annotationPattern3Button" class="btn btn-default" type="button" translate="binderPageDetail.annotation.pattern.03"></button></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="btn-toggle btn-left">
+                                        <button type="button" id="colorPickerButton" class="btn btn-default" ng-click="VS.isOpenColorPicker = !VS.isOpenColorPicker">
+                                            <span translate="binderPageDetail.annotation.color"></span>：<i class="fa fa-stop fa-fw" ng-style="{color: VS.imageViewer.edit.stroke}"></i><i class="fa fa-chevron-down"></i>
+                                        </button>
+                                        <div class="toggle-menu" collapse="VS.isOpenColorPicker">
+                                            <div id="colorPicker"></div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li><button id="removeAllButton" class="btn btn-default" type="button" translate="binderPageDetail.annotation.delete"></button></li>
+                                <li>
+                                    <button id="overlayViewButton" class="btn btn-default" type="button">
+                                        <span ng-if="!!VS.imageViewer.edit.isViewOverlay" translate="binderPageDetail.annotation.view.show"></span>
+                                        <span ng-if="!VS.imageViewer.edit.isViewOverlay" translate="binderPageDetail.annotation.view.hidden"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="editArea">
+                    <div class="center_area">
+                        <div class="aspect43">
+                            <div id="openseadragon" class="openseadragon aspect43content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rightMenu">
+
+                    <div class="right_area">
+
+                        <div class="info">
+
+                            <form name="formMeta">
+                            <tabset>
+                                <tab>
+                                    <tab-heading><span translate="binderPageDetail.meta03.header"></span><br><span translate="binderPageDetail.meta03.header02"></span></tab-heading>
+                                        <ul>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.pageNo"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.pageNo" id="pageNoMeta03" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.title"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.title" id="titleMeta03"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.creator"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.creator" id="creatorMeta03"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.confirmor"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.confirmor" id="confirmorMeta03"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.creation_date"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.creationDate" id="creationDateMeta03"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.text"></p>
+                                                <p class="col-lg-9"><textarea class="form-control" ng-model="VS.tmpBinderPage.text" id="textMeta03"></textarea></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.tag"></p>
+                                                <p class="col-lg-9">
+                                                    <tags-input ng-model="VS.tmpBinderPage.tags">
+                                                        <auto-complete source="VS.suggestTags($query)" min-length="2"></auto-complete>
+                                                    </tags-input>
+                                                </p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.data_size"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.fileSize" id="imageFileSizeMeta03" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.width"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.width" id="widthMeta03" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.height"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.height" id="heightMeta03" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta03.format"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.extension" id="formatMeta03" disabled="disabled"></p>
+                                            </li>
+                                        </ul>
+                                </tab>
+                                <tab>
+                                    <tab-heading><span translate="binderPageDetail.meta02.header"></span><br><span translate="binderPageDetail.meta02.header02"></span></tab-heading>
+                                        <ul>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.pageNo"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.pageNo" id="pageNoMeta02" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.title"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.title" id="titleMeta02" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.creator"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.creator" id="creatorMeta02" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.confirmor"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.confirmor" id="confirmorMeta02" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.creation_date"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.creationDate" id="creationDateMeta02" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.text"></p>
+                                                <p class="col-lg-9"><textarea class="form-control" ng-model="VS.originalPage.text" id="textMeta02" disabled="disabled"></textarea></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.tag"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.tags" id="tagsMeta02" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.data_size"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.fileSize" id="imageFileSizeMeta02" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.width"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.width" id="widthMeta02" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.height"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.height" id="heightMeta02" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta02.format"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.extension" id="formatMeta02" disabled="disabled"></p>
+                                            </li>
+                                        </ul>
+                                </tab>
+                                <tab>
+                                    <tab-heading><span translate="binderPageDetail.meta01.header"></span><br><span translate="binderPageDetail.meta01.header02"></span></tab-heading>
+                                        <ul>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.pageNo"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpBinderPage.pageNo" id="pageNoMeta01" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.title"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.orgTitle" id="titleMeta01" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.creator"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.orgCreator" id="creatorMeta01" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.confirmor"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.orgConfirmor" id="confirmorMeta01" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.creation_date"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.orgCreationDate" id="creationDateMeta01" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.text"></p>
+                                                <p class="col-lg-9"><textarea class="form-control" ng-model="VS.originalPage.orgText" id="textMeta01" disabled="disabled"></textarea></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.data_size"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.fileSize" id="imageFileSizeMeta01" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.width"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.width" id="widthMeta01" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.height"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.height" id="heightMeta01" disabled="disabled"></p>
+                                            </li>
+                                            <li class="row">
+                                                <p class="col-lg-3" translate="binderPageDetail.meta01.format"></p>
+                                                <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.originalPage.extension" id="formatMeta01" disabled="disabled"></p>
+                                            </li>
+                                        </ul>
+                                </tab>
+                                <tab>
+                                    <tab-heading><span translate="binderPageDetail.comment.header"></span><br>　</tab-heading>
+                                    <ul id="annotationTextInfos">
+                                        <li ng-repeat="annotation in VS.imageViewer.annotation.annotations | filter: {'figureType': 5}" class="annotationTextInfo" data-annotation-id="{{annotation.svgId}}">
+                                            <ul>
+                                                <li class="row">
+                                                    <p class="col-lg-3" translate="binderPageDetail.comment.title"></p>
+                                                    <p class="col-lg-9" ng-bind="annotation.title"></p>
+                                                </li>
+                                                <li class="row">
+                                                    <p class="col-lg-3" translate="binderPageDetail.comment.text"></p>
+                                                    <p class="col-lg-9" ng-bind="annotation.text"></p>
+                                                </li>
+                                                <li class="row">
+                                                    <p class="col-lg-3" translate="binderPageDetail.comment.url"></p>
+                                                    <a target="_blank" href="{{annotation.url}}"><p class="col-lg-9" ng-bind="annotation.url"></p></a>
+                                                </li>
+                                                <li class="row">
+                                                    <p class="col-lg-3"><button type="button" class="editAnnotationButton btn btn-primary" translate="binderPageDetail.comment.button_change"></button></p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </tab>
+                            </tabset>
+                            </form>
+
+                        </div>
+
+                        <div class="control">
+
+                            <p class="editBtn2">
+                                <button type="button" id="saveButton" class="btn btn-outline btn-primary"><i class="fa fa-save fa-fw"></i><span translate="binderPageDetail.control.button_save"></span></button>
+                                <a href="../media/output/annotation/{{VS.tmpBinderPage.id}}"><button type="button" id="imageDownload" class="btn btn-outline btn-primary"><i class="fa fa-download  fa-fw" ng-disabled="VS.tmpBinderPage.id == 0"></i><span translate="binderPageDetail.control.button_download"></span></button></a>
+                                <a href="../media/pdf/annotation/{{VS.tmpBinderPage.id}}" target="_blank"><button type="button" class="btn btn-outline btn-primary"><i class="fa fa-print fa-fw"></i><span translate="binderPageDetail.control.button_print"></span></button></a>
+                                <a href="../media/data/binderPage/{{VS.tmpBinderPage.id}}" target="_blank"><button type="button" class="btn btn-outline btn-primary"><i class="fa fa-file-text-o fa-fw"></i><span translate="binderPageDetail.control.button_output"></span></button></a>
+                            </p>
+
+                        </div>
+
+
+                        <!-- owl.carousel -->
+                        <div class="carousel">
+                            <div class="carousel-wrapper">
+                                <div id="owl-selected" class="owl-carousel">
+                                    <div class="item" ng-class="{selectedItem:VS.isCurrentCarousel(page)}" ng-repeat="page in VS.selectedPages" data-original-page-id="{{page.originalPageId}}" data-binder-page-id="{{page.id}}">
+                                        <span class="contain" uv-load-background-image="{{page.thumbUrl}}"></span>
+                                        <div class="pageNumber" ng-if="VS.isDisplayPageNo()">
+                                            <span class="badge" ng-bind="page.pageNo"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// End of owl.carousel -->
+                            </div>
+                        </div>
+
+                    </div><!--// End of right area -->
+                </div><!--// End of rightMenu -->
+
+            </div>
+
+            <!--// 注釈用モーダルウィンドウ -->
+            <script type="text/ng-template" id="modal.html">
+                <div class="modal-header">
+                    <h3 class="modal-title" translate="binderPageDetail.modal.title"></h3>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><span translate="binderPageDetail.modal.label_title"></span><input type="text" ng-model="annotate.title"></li>
+                        <li><span translate="binderPageDetail.modal.label_text"></span><textarea ng-model="annotate.text"></textarea></li>
+                        <li><span translate="binderPageDetail.modal.label_url"></span><input type="text" ng-model="annotate.url"></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" ng-click="ok()" translate="binderPageDetail.modal.button_ok"></button>
+                    <button class="btn btn-warning" ng-click="cancel()" translate="binderPageDetail.modal.button_cancel"></button>
+                </div>
+            </script>
+        </div>

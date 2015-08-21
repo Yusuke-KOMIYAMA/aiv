@@ -1,0 +1,253 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-07-13 11:24+0900\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/UsersController.php:207
+msgid "Your post has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:215
+msgid "Unable to add your post."
+msgstr ""
+
+#: Controller/UsersController.php:227;235;252;257
+msgid "Invalid post"
+msgstr ""
+
+#: Controller/UsersController.php:267
+msgid "Your post has been updated."
+msgstr ""
+
+#: Controller/UsersController.php:274
+msgid "Unable to update your post."
+msgstr ""
+
+#: View/Backup/index.ctp:4
+msgid "データベースバックアップ"
+msgstr "Database Backup"
+
+#: View/Backup/index.ctp:13
+msgid "バックアップ対象"
+msgstr "Backup Target"
+
+#: View/Backup/index.ctp:14
+msgid "データベース名"
+msgstr "Database Name"
+
+#: View/Backup/index.ctp:18
+#: View/User/add.ctp:73
+#: View/User/edit.ctp:67
+msgid "送信"
+msgstr "Submit"
+
+#: View/Backup/index.ctp:21
+msgid "結果"
+msgstr "Edit"
+
+#: View/Backup/index.ctp:22
+#: View/Log/index.ctp:74
+msgid "メッセージ"
+msgstr "Message"
+
+#: View/Backup/index.ctp:23
+msgid "保存ファイル"
+msgstr "Saved File"
+
+#: View/Layouts/admin.ctp:65
+msgid "ユーザー管理"
+msgstr "User Management"
+
+#: View/Layouts/admin.ctp:75
+msgid "ログ管理"
+msgstr "Log Management"
+
+#: View/Layouts/admin.ctp:85
+msgid "DBバックアップ"
+msgstr "Database Backup"
+
+#: View/Log/index.ctp:4
+msgid "ログ一覧"
+msgstr "Log List"
+
+#: View/Log/index.ctp:37;71
+msgid "種別"
+msgstr "Log Type"
+
+#: View/Log/index.ctp:44;75
+#: View/User/edit.ctp:10
+#: View/User/index.ctp:14
+msgid "ユーザーID"
+msgstr "User ID"
+
+#: View/Log/index.ctp:51
+msgid "検索"
+msgstr "Search"
+
+#: View/Log/index.ctp:54
+#: View/User/view.ctp:36
+msgid ""
+msgstr ""
+
+#: View/Log/index.ctp:61
+msgid "CSVダウンロード"
+msgstr "Download as CSV"
+
+#: View/Log/index.ctp:69
+msgid "ログID"
+msgstr "Log ID"
+
+#: View/Log/index.ctp:70
+msgid "日時"
+msgstr "Date"
+
+#: View/Log/index.ctp:72
+msgid "レベル"
+msgstr "Level"
+
+#: View/Log/index.ctp:73
+msgid "メッセージID"
+msgstr "Message ID"
+
+#: View/Log/index.ctp:76
+msgid "接続元IPアドレス"
+msgstr "Connected IP Address"
+
+#: View/User/add.ctp:4
+msgid "ユーザー登録"
+msgstr "User Registration"
+
+#: View/User/add.ctp:10
+#: View/User/edit.ctp:15
+#: View/User/index.ctp:15
+msgid "ユーザー名"
+msgstr "User Name"
+
+#: View/User/add.ctp:15
+#: View/User/edit.ctp:20
+#: View/User/index.ctp:17
+msgid "SSOログインID"
+msgstr "SSO Login ID"
+
+#: View/User/add.ctp:20
+#: View/User/edit.ctp:25
+#: View/User/index.ctp:18
+msgid "ローカルログインID"
+msgstr "Local Login ID"
+
+#: View/User/add.ctp:25
+#: View/User/edit.ctp:30
+msgid "ローカルログインパスワード"
+msgstr "Local Login Password"
+
+#: View/User/add.ctp:39
+#: View/User/edit.ctp:40
+msgid "ローカル認証を許可する"
+msgstr "Permit Local Authentication"
+
+#: View/User/add.ctp:43
+#: View/User/edit.ctp:44
+msgid "権限を選択"
+msgstr "Select Authority"
+
+#: View/User/add.ctp:46
+#: View/User/edit.ctp:47
+msgid "一般ユーザー"
+msgstr "User"
+
+#: View/User/add.ctp:47
+#: View/User/edit.ctp:48
+msgid "監督者"
+msgstr "Ovserver"
+
+#: View/User/add.ctp:48
+#: View/User/edit.ctp:49
+msgid "システム管理者"
+msgstr "Administrator"
+
+#: View/User/add.ctp:57
+#: View/User/edit.ctp:57
+#: View/User/index.ctp:20
+msgid "ペンID"
+msgstr "Pen ID"
+
+#: View/User/add.ctp:71
+#: View/User/edit.ctp:65
+msgid "ユーザーを有効にする"
+msgstr "Activate User"
+
+#: View/User/edit.ctp:4
+msgid "ユーザー編集"
+msgstr "Edit User"
+
+#: View/User/index.ctp:4
+msgid "ユーザー一覧"
+msgstr "User List"
+
+#: View/User/index.ctp:8
+msgid "登録"
+msgstr "Registration"
+
+#: View/User/index.ctp:16
+msgid "研究室ID(未使用)"
+msgstr "Laboratory ID"
+
+#: View/User/index.ctp:19
+msgid "ローカルログイン許可"
+msgstr "Accept Local Login"
+
+#: View/User/index.ctp:21;23
+msgid "有効"
+msgstr "Available"
+
+#: View/User/index.ctp:22
+msgid "権限"
+msgstr "Authority"
+
+#: View/User/index.ctp:24;44
+msgid "参照"
+msgstr "Browse"
+
+#: View/User/index.ctp:25;48
+#: View/User/view.ctp:39
+msgid "編集"
+msgstr "Edit"
+
+#: View/User/view.ctp:4
+msgid "ユーザー参照"
+msgstr "Browse User"
+
+#: Model/Binder.php:validation for field text
+#: Model/BinderPage.php:validation for field binderId;validation for field originalPageId;validation for field text;validation for field creationDate;validation for field imageRotate
+#: Model/OriginalPage.php:validation for field text;validation for field creationDate;validation for field orgText;validation for field orgCreationDate;validation for field imageRotate
+msgid "rule"
+msgstr ""
+
+#: Model/BinderPage.php:validation for field binderId;validation for field originalPageId
+msgid "c"
+msgstr ""
+
+#: Model/Log.php:validation for field level
+#: Model/User.php:validation for field localLoginID
+msgid "Letters and numbers only"
+msgstr ""
+
+#: Model/User.php:validation for field localLoginID
+msgid "Between 5 to 15 characters"
+msgstr ""
+
+#: Model/User.php:validation for field localLoginPassword
+msgid "Minimum 8 characters long"
+msgstr ""
+

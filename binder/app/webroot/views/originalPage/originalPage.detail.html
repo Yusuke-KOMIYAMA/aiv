@@ -1,0 +1,176 @@
+
+        <div id="page-contents-inner">
+            <div id="breadcrumb_list">
+                <ol class="breadcrumb">
+                    <li ui-sref="home" style="cursor:pointer;" translate="binder.breadcrumb"></li>
+                    <li ui-sref="home.originalPage" style="cursor:pointer;" translate="originalPage.breadcrumb"></li>
+                    <li translate="originalPageDetail.breadcrumb"></li>
+                </ol>
+            </div>
+
+            <div class="edit_pgBox clearfix">
+
+                <div id="editArea">
+                    <div class="center_area">
+                        <div class="center_area_inner aspect43">
+                            <div id="openseadragon" class="openseadragon aspect43content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rightMenu">
+
+                    <div class="right_area">
+
+                        <div class="info">
+
+                            <form name="originalPageMeta">
+                            <tabset>
+                                <tab>
+                                    <tab-heading><span translate="originalPageDetail.meta02.header"></span><br><span translate="originalPageDetail.meta02.header02"></span></tab-heading>
+                                    <ul>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.pageNo"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.pageNo" id="pageNoMeta02" ng-pattern="/^[0-9]+$/" required></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.title"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.title" id="titleMeta02" required></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.creator"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.creator" id="creatorMeta02" required></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.confirmor"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.confirmor" id="confirmorMeta02"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.creation_date"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.creationDate" id="creationDateMeta02" required></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.text"></p>
+                                            <p class="col-lg-9"><textarea class="form-control" ng-model="VS.tmpOriginalPage.text" id="textMeta02" required></textarea></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.tag"></p>
+                                            <p class="col-lg-9">
+                                                <tags-input ng-model="VS.tmpOriginalPage.tags">
+                                                    <auto-complete source="VS.suggestTags($query)" min-length="2"></auto-complete>
+                                                </tags-input>
+                                            </p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.data_size"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.fileSize" id="imageFileSizeMeta02" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.width"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.width" id="widthMeta02" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.height"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.height" id="heightMeta02" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta02.format"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.extension" id="formatMeta02" disabled="disabled"></p>
+                                        </li>
+                                    </ul>
+                                </tab>
+                                <tab>
+                                    <tab-heading><span translate="originalPageDetail.meta01.header"></span><br><span translate="originalPageDetail.meta01.header02"></span></tab-heading>
+                                    <ul>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.pageNo"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.pageNo" id="pageNoMeta01" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.title"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.orgTitle" id="titleMeta01" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.creator"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.orgCreator" id="creatorMeta01" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.confirmor"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.orgConfirmor" id="confirmorMeta01" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.creation_date"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.orgCreationDate" id="creationDateMeta01" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.text"></p>
+                                            <p class="col-lg-9"><textarea class="form-control" ng-model="VS.tmpOriginalPage.orgText" id="textMeta01" disabled="disabled"></textarea></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.data_size"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.fileSize" id="imageFileSizeMeta01" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.width"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.width" id="widthMeta01" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.height"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.height" id="heightMeta01" disabled="disabled"></p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-lg-3" translate="originalPageDetail.meta01.format"></p>
+                                            <p class="col-lg-9"><input type="text" class="form-control" ng-model="VS.tmpOriginalPage.extension" id="formatMeta01" disabled="disabled"></p>
+                                        </li>
+                                    </ul>
+                                </tab>
+                            </tabset>
+                            </form>
+
+                        </div>
+
+                        <div class="control">
+
+                            <p class="editBtn2">
+                                <button type="button" id="saveButton" class="btn btn-outline btn-primary"><i class="fa fa-save fa-fw" ng-disabled="!!originalPageMeta.$invalid"></i><span translate="originalPageDetail.control.button_save"></span></button>
+                                <a href="../media/output/original/{{VS.tmpOriginalPage.id}}"><button type="button" class="btn btn-outline btn-primary"><i class="fa fa-download fa-fw"></i><span translate="originalPageDetail.control.button_download"></span></button></a>
+                                <a href="../media/pdf/original/{{VS.tmpOriginalPage.id}}" target="_blank"><button type="button" class="btn btn-outline btn-primary"><i class="fa fa-print fa-fw"></i><span translate="originalPageDetail.control.button_print"></span></button></a>
+                            </p>
+
+                        </div>
+
+                        <!-- owl.carousel -->
+                        <div class="carousel">
+                            <div class="carousel-wrapper">
+                                <div id="owl-selected" class="owl-carousel">
+                                    <div class="item" ng-class="{selectedItem:VS.isCurrentCarousel(page)}" ng-repeat="page in VS.selectedPages" data-original-page-id="{{page.id}}">
+                                        <span class="contain" uv-load-background-image="{{page.thumbUrl}}"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// End of owl.carousel -->
+
+                    </div><!--// End of right menu -->
+
+                </div><!--// End of rightMenu -->
+
+            </div>
+
+            <script type="text/ng-template" id="modal.html">
+                <div class="modal-header">
+                    <h3 class="modal-title" translate="originalPageDetail.modal.title"></h3>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><span translate="originalPageDetail.modal.label_title"></span>:<input type="text" ng-model="annotate.title"></li>
+                        <li><span translate="originalPageDetail.modal.label_text"></span>:<textarea ng-model="annotate.text"></textarea></li>
+                        <li><span translate="originalPageDetail.modal.label_url"></span>:<input type="text" ng-model="annotate.url"></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" ng-click="ok()" translate="originalPageDetail.modal.button_ok"></button>
+                    <button class="btn btn-warning" ng-click="cancel()" translate="originalPageDetail.modal.button_cancel"></button>
+                </div>
+            </script>
+        </div>

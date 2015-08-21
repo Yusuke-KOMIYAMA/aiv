@@ -1,0 +1,137 @@
+
+    <!-- ========================================
+        検索
+      ======================================== -->
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="uv_sidenav">
+
+        <!-- Sidebar toggle button -->
+        <div class="uv_sidenav__box iconBox">
+            <div uv-toggle="{target:'wrapper',class:'closeSidebar'}">
+                <i title="縮小" data-placement="top" data-toggle="tooltip" class="fa fa-minus-square-o fa-fw uvSidebarMinIcon"></i>
+                <i title="拡大" data-placement="top" data-toggle="tooltip" class="fa fa-expand fa-fw uvSidebarMaxIcon"></i>
+            </div>
+        </div><!-- //Sidebar toggle button -->
+        <div class="uv_sidenav__box uv_sidenav__srcBox">
+
+            <div id="acdBox00" style="display: block;" ng-if="users.length > 0">
+                <form method="post" action='../login/change'>
+                    <ul class="nav mgb20">
+                        <li class="sidebar-formbox">
+                            <select ng-model="selectedUser" class="form-control" ng-options="user.num as user.name for user in users"></select>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="sidebar-formbox"><button type="submit" id="changeUserButton" class="btn btn-primary"><i data-placement="top" data-toggle="tooltip" class="fa fa-user fa-fw"></i> <span translate="home.change_user"></span></button></li>
+                    </ul>
+                    <input type="hidden" name="userId" ng-value="selectedUser" />
+                </form>
+            </div>
+            <p id="acdBox01Flag" class="sidebar-title" uv-sidebar-toggle="{show:'acdBox01',hidden:'acdBox02'}">
+                <strong><i class="glyphicon glyphicon-th"></i> <span translate="home.search_image.title"></span></strong>
+                <i class="fa fa-chevron-up fa-fw" data-toggle="tooltip" data-placement="top"></i>
+            </p>
+            <div id="acdBox01" style="display: block;">
+                <ul id="side-menu-01" class="nav mgb20">
+                    <li class="sidebar-formbox"><input type="text"  id="originalPageSearchText" ng-model="originalPageSearch.text" class="form-control"></li>
+                    <li id="searchFor01">
+                        <label translate="home.search_image.label_all"></label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" ng-model="originalPageSearch.isTitle"><span translate="home.search_image.label_title"></span>
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" ng-model="originalPageSearch.isText"><span translate="home.search_image.label_text"></span>
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" ng-model="originalPageSearch.isTag"><span translate="home.search_image.label_tag"></span>
+                        </label>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="sidebar-formbox"><button type="button" id="searchButton01" class="btn btn-primary" ng-disabled="originalPageSearch.text.trim() == ''"><i data-placement="top" data-toggle="tooltip" class="fa fa-search fa-fw"></i><span translate="home.search_image.button_search"></span></button></li>
+                </ul>
+            </div>
+        </div><!-- /uv_sidenav__box uv_sidenav__srcBox -->
+
+
+        <div class="uv_sidenav__box uv_sidenav__srcBox">
+            <p id="acdBox02Flag" class="sidebar-title" uv-sidebar-toggle="{show:'acdBox02',hidden:'acdBox01'}">
+                <strong><i class="glyphicon glyphicon-th"></i> <span translate="home.search_binderPage.title"></span></strong></strong>
+                <i class="fa fa-chevron-down fa-fw" data-toggle="tooltip" data-placement="top"></i>
+            </p>
+            <div id="acdBox02">
+                <ul id="side-menu-02" class="nav mgb20">
+                    <li class="sidebar-formbox"><input type="text" id="binderPageSearchText" ng-model="binderPageSearch.text" class="form-control"></li>
+                    <li id="searchFor02">
+                        <label translate="home.search_binderPage.label_all"></label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" ng-model="binderPageSearch.isTitle"><span translate="home.search_binderPage.label_title"></span>
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" ng-model="binderPageSearch.isText"><span translate="home.search_binderPage.label_text"></span>
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" ng-model="binderPageSearch.isTag"><span translate="home.search_binderPage.label_tag"></span>
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" ng-model="binderPageSearch.isAnnotation"><span translate="home.search_binderPage.label_annotation"></span>
+                        </label>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="sidebar-formbox"><button type="button" id="searchButton02" class="btn btn-primary" ng-disabled="binderPageSearch.text.trim() == ''"><i data-placement="top" data-toggle="tooltip" class="fa fa-search fa-fw"></i><span translate="home.search_binderPage.button_search"></span></button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="uv_sidenav__box clrVer2">
+            <div id="uv_sidenav__box__createdBox">
+                <p id="timelineButton">
+                    <button type="button" class="btn btn-info btn-block" translate="home.search_timeline.button_search"></button>
+                    <i data-placement="top" data-toggle="tooltip" class="fa fa-chevron-right fa-fw"></i>
+                </p>
+
+                <a href="./upload/" class="btn btn-warning btn-block" type="button" translate="home.create_page.button"></a>
+                <button id="createBinderButton" class="btn btn-warning btn-block" type="button" translate="home.create_binder.button"></button>
+            </div>
+        </div><!-- / .uv_sidenav__box clrVer2 -->
+
+    </div>
+    <!-- //Sidebar -->
+
+    <div id="page-contents" ui-view="contents"></div>
+
+    <script type="text/ng-template" id="editBinderModal.html" class="ng-scope">
+        <div class="modal-header">
+            <h3 class="modal-title" translate="binder.modal.title"></h3>
+        </div>
+        <div class="modal-body">
+            <ul id="binderModal">
+                <li><label><span class="inputTitle" translate="binder.modal.label_title"></span><input type="text" id="binderTitle" class="inputText" name="binderTitle" ng-model="binder.title"></label></li>
+                <li><label><span class="inputTitle" translate="binder.modal.label_text"></span><textarea id="binderText" name="binderText" class="inputText" ng-model="binder.text"></textarea></label></li>
+                <li>
+                    <label>
+                        <span class="inputTitle" translate="binder.modal.label_tag"></span><tags-input ng-model="binder.tags">
+                            <auto-complete source="loadTags($query)" min-length="2"></auto-complete>
+                        </tags-input>
+                    </label>
+                </li>
+            </ul>
+            <div ng-if="slides.length > 0" style="width: 150px; height: 150px" id="slides_control">
+                <carousel interval="interval" uv-disable-animate>
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                        <div class="contain coverSlider" uv-load-background-image="{{slide.url}}"></div>
+                        <div class="carousel-caption">
+                            <h4>Slide {{$index+1}}</h4>
+                        </div>
+                    </slide>
+                </carousel>
+                <input type="number" ng-model="coverId" min="0" max="{{slides.length - 1}}">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>

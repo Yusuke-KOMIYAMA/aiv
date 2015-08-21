@@ -1,0 +1,329 @@
+{
+    "integration_server":{
+        "name": "RegMed"
+    },
+    "application":{
+        "name": "Annotation Image Viewer"
+    },
+    "header":{
+        "logout": "Logout",
+	"loginuser": "Login User"
+    },
+    "home":{
+        "title":"Home",
+        "change_user":"Chage User",
+        "search_image":{
+            "title": "Search Image",
+            "label_all":"Search Field",
+            "label_title":"Title",
+            "label_text":"Text",
+            "label_tag":"Tag",
+            "button_search":"Search"
+        },
+        "search_binderPage":{
+            "title": "Search Binder and Annotation",
+            "label_all":"Search Field",
+            "label_title":"Title",
+            "label_text":"Text",
+            "label_tag":"Tag",
+            "label_annotation":"Annotation",
+            "button_search":"Search"
+        },
+        "search_timeline":{
+            "button_search":"Search Timeline"
+        },
+        "create_page":{
+            "button":"Create Image"
+        },
+        "create_binder":{
+            "button":"Create Binder"
+        }
+    },
+    "originalPage":{
+        "title":"Search Result in Original Image",
+        "breadcrumb":"Search Result in Original Image",
+        "search_result":{
+            "title":"Search Result",
+            "suffix":" Hits",
+            "select_all":"Select All",
+            "button_small":"Small",
+            "button_middle":"Middle",
+            "button_large":"Large"
+        },
+        "selectedPages":{
+            "title":"Instance",
+            "suffix":" Entries",
+            "remove_all":"Cancel All Selected",
+            "button_edit":"Edit Binder",
+            "button_save":"Save",
+            "button_print":"Print",
+            "button_output":"Download",
+            "label_order":"Change Order",
+            "button_order":"Move to Behind",
+            "button_small":"Small",
+            "button_middle":"Middle",
+            "button_large":"Large"
+        },
+        "message":{
+            "not_save_binder":"Please save a binder first.",
+            "delete_original_page":"Do you delete an original image really?"
+        }
+    },
+    "originalPageDetail":{
+        "title":"Detail Information of Original Image",
+        "breadcrumb":"Detail Information of Original Image",
+        "meta02":{
+            "header":"Metadata",
+            "header02":"(2)",
+            "pageNo":"Page Number",
+            "title":"Title",
+            "text":"Text",
+            "creator":"Creator",
+            "confirmor":"Confirmor",
+            "creation_date":"Creation Date",
+            "tag":"Tag",
+            "data_size":"Data Size",
+            "width":"Width",
+            "height":"Height",
+            "format":"File Format"
+        },
+        "meta01":{
+            "header":"Metadata",
+            "header02":"(1)",
+            "pageNo":"Page Number",
+            "title":"Title",
+            "text":"Text",
+            "creator":"Creator",
+            "confirmor":"Confirmor",
+            "creation_date":"Creation Data",
+            "tag":"Tag",
+            "data_size":"Data Size",
+            "width":"Width",
+            "height":"Height",
+            "format":"Data Format"
+        },
+        "control":{
+            "button_save":"Save",
+            "button_download":"Image Download",
+            "button_print":"Print"
+        },
+        "modal":{
+            "title":"Annotation",
+            "label_title":"Title",
+            "label_text":"Text",
+            "label_url":"URL",
+            "button_ok":"OK",
+            "button_cancel":"Cancel"
+        }
+    },
+    "binderPage":{
+        "title":"Search Result in Binder Page",
+        "breadcrumb":"Search Result in Binder Page",
+        "search_result":{
+            "title":"Result",
+            "suffix":" Hits"
+        }
+    },
+    "binderPageDetail":{
+        "title":"Detail Information of Binder Page",
+        "breadcrumb":"Detail Information of Binder Page",
+        "annotation": {
+            "redo": "Redo",
+            "undo": "Undo",
+            "control": {
+                "move": "Move Image",
+                "ellipse": "Shape: Circle",
+                "rect": "Shape: Rectangle",
+                "arrow": "Shape: Allow",
+                "line": "Shape: Line",
+                "comment": "Annotation"
+            },
+            "line": {
+                "solid": "Line Pattern: Solid",
+                "dotted": "Line Pattern: Dotted",
+                "bold": "Diameter: Thick",
+                "normal": "Diameter: Middle",
+                "narrow": "Diameter: Thin"
+            },
+            "pattern": {
+                "title": "Default Set",
+                "01": "Color: Red, Line: Solid, Diameter: Middle",
+                "02": "Color: Blue, Line: Dotted, Diameter: Thin",
+                "03": "Color: Yello, Line: Solid, Diameter: Thick"
+            },
+            "color": "Color",
+            "delete": "Delete All",
+            "view": {
+                "show": "Show",
+                "hidden": "Hidden"
+            }
+        },
+        "meta03":{
+            "header":"Metadata",
+            "header02":"(3)",
+            "pageNo":"Page Number",
+            "title":"Title",
+            "text":"Text",
+            "creator":"Creator",
+            "confirmor":"Confirmor",
+            "creation_date":"Creation Date",
+            "tag":"Tag",
+            "data_size":"Data Size",
+            "width":"Width",
+            "height":"Height",
+            "format":"Data Format"
+        },
+        "meta02":{
+            "header":"Metadata",
+            "header02":"(2)",
+            "pageNo":"Page Number",
+            "title":"Title",
+            "text":"Text",
+            "creator":"Creator",
+            "confirmor":"Confirmor",
+            "creation_date":"Creation Date",
+            "tag":"Tag",
+            "data_size":"Data Size",
+            "width":"Width",
+            "height":"Height",
+            "format":"Format"
+        },
+        "meta01":{
+            "header":"Metadata",
+            "header02":"(1)",
+            "pageNo":"Page Number",
+            "title":"Title",
+            "text":"Text",
+            "creator":"Creator",
+            "confirmor":"Confirmor",
+            "creation_date":"Creation Date",
+            "tag":"Tag",
+            "data_size":"Data Size",
+            "width":"Width",
+            "height":"Height",
+            "format":"Format"
+        },
+        "comment":{
+            "header":"Comment",
+            "title":"Title",
+            "text":"Text",
+            "url":"URL",
+            "button_change":"Edit"
+        },
+        "control":{
+            "button_save":"Save",
+            "button_download":"Image Download",
+            "button_print":"Print",
+            "button_output":"Download"
+        },
+        "modal":{
+            "title":"Annotation",
+            "label_title":"Title",
+            "label_text":"Text",
+            "label_url":"URL",
+            "button_ok":"OK",
+            "button_cancel":"Cancel"
+        }
+    },
+    "timeline":{
+        "title":"Search Timeline",
+        "breadcrumb":"Search Timeline"
+    },
+    "binder": {
+        "default": {
+            "title": "Nameless",
+            "text": "Nameless 2"
+        },
+        "modal":{
+            "title":"Binder",
+            "label_title":"Binder",
+            "label_text":"Text",
+            "label_tag":"Tag"
+        },
+        "delete_modal":{
+            "title":"Delete Binder",
+            "body":"Do you delete a binder really?",
+            "label_title":"Title",
+            "button_delete":"Delete",
+            "button_cancel":"Cancel"
+        },
+        "breadcrumb":"Home"
+    },
+    "upload":{
+        "title":"Upload",
+        "header_title":"Upload",
+        "button":{
+            "upload":"Upload",
+            "file_upload":"Select File",
+            "folder_upload":"Select Folder",
+            "more_upload":"Upload New File"
+        },
+        "message":{
+            "uploading":"Now Uploading",
+            "uploaded":"Complete Upload",
+            "uploaded_with_error":"Complete Upload (Error)",
+            "drag_and_drop":"Please perform drag and drop of a file here."
+        },
+        "table":{
+            "number":"#",
+            "file_name":"File Name",
+            "thumbnail":"Thumbnail",
+            "title":"Title",
+            "content":"Content",
+            "creator":"Creator",
+            "confirmor":"Confirmor",
+            "creation_date":"Creation Date",
+            "tag":"Tag",
+            "file_size":"File Size",
+            "state":"State"
+        }
+    },
+    "login":{
+        "title":"Login",
+        "sso_login":"SSO Login",
+        "local_login":{
+            "title":"Local Login",
+            "id":{
+                "label":"ID",
+                "placeholder":"ID"
+            },
+            "password":{
+                "label":"PW",
+                "placeholder":"Password"
+            },
+            "submit_form":"submit",
+            "message": {
+                "0001":"Login failed."
+            }
+        },
+        "nouser":{
+            "title":"Your user information is not registered. | Login",
+            "message":"Your user information is not registered. Please ask the administrator about your registration.",
+            "link":"Back"
+        },
+        "logout":{
+            "title":"Logout",
+            "message":"Logged out.",
+            "link":{
+                "sso":"Logout SSO continuously.",
+                "local":"To login form."
+            }
+        },
+        "error":{
+            "title":"Error | Login",
+            "message":"The error occurred for the reason of a session out etc. Please try login again, and ask an administrator, when an error occurs frequently.",
+            "link":"Back"
+        }
+    },
+    "imageViewer":{
+        "popup":{
+            "close":"Close",
+            "edit":"Edit",
+            "delete":"Delete",
+            "confirm_delete":"Do you delete a selected annotation?"
+        }
+    },
+    "message":{
+        "confirm_move_page":"Non saved data is existence, do you leave this page really?"
+    }
+}

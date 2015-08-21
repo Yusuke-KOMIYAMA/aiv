@@ -1,0 +1,20 @@
+<?php
+
+require_once __DIR__.'/src/vendor/symfony/src/Symfony/Component/ClassLoader/UniversalClassLoader.php';
+
+use Symfony\Component\ClassLoader\UniversalClassLoader;
+
+$loader = new UniversalClassLoader();
+$loader->registerNamespaces(array(
+	'Symfony'			=>	__DIR__.'/src/vendor/symfony/src',
+	'Imagine'			=>	__DIR__.'/src/vendor/imagine/lib',
+	'Deepzoom\\Tests'	=> __DIR__.'/tests',
+	'Deepzoom'			=> __DIR__.'/src',
+));
+$loader->registerPrefixes(array(
+    'Zend_' => __DIR__.'/src/vendor/zend/lib',
+));
+$loader->register();
+
+// for Zend Framework
+set_include_path(__DIR__.'/src/vendor/zend/lib'.PATH_SEPARATOR.get_include_path());

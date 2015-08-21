@@ -1,0 +1,140 @@
+
+            <div id="breadcrumb_list">
+                <ol class="breadcrumb">
+                    <li ui-sref="home" style="cursor:pointer;" translate="binder.breadcrumb"></li>
+                    <li translate="originalPage.breadcrumb"></li>
+                </ol>
+            </div>
+
+            <div id="searchResult" class="originalPages results uv_pgBox">
+
+                <!-- #searchResultHeader -->
+                <div id="searchResultHeader" class="box-header">
+                    <div class="row">
+                        <p translate="originalPage.search_result.title"></p>
+                        <p><span ng-bind="originalPagesLength"></span><span translate="originalPage.search_result.suffix"></span></p>
+                    </div>
+                    <p>
+                        <button id="selectOriginalPagesButton" class="btn btn-outline btn-primary" type="button"><i class="fa  fa-check-square-o fa-fw"></i><span translate="originalPage.search_result.select_all"></span></button>
+                    </p>
+                    <p>
+                        <button id="smallOriginalPagesButton" class="btn btn-outline btn-primary" type="button" translate="originalPage.search_result.button_small"></button>
+                        <button id="middleOriginalPagesButton" class="btn btn-outline btn-primary" type="button" translate="originalPage.search_result.button_middle"></button>
+                        <button id="largeOriginalPagesButton" class="btn btn-outline btn-primary" type="button" translate="originalPage.search_result.button_large"></button>
+                    </p>
+                </div>
+                <!-- /#searchResultHeader -->
+
+                <div id="originalPageSearchResult">
+                    <ul id="originalPagesArea" class="middle" ng-cloak>
+                        <li class="originalPage pagePanel"
+                            ng-repeat="page in VS.sharedStore.originalPages"
+                            data-original-page-id="{{page.id}}"
+                            data-index="{{$index}}"
+                            ng-class="{selected:page.isSelect}">
+
+                            <div id="selectArea{{page.id}}" class="selectArea">
+                                <div class="pageImagePanel">
+                                    <div id="page{{page.id}}" class="contain page pageImage" uv-load-background-image="{{page.thumbUrl}}"></div>
+                                    <div id="overlay{{page.id}}" class="overlay">
+                                        <div id="originalPageOverlayContents" class="overlayContents">
+                                            <p class="pageTitle">{{page.title}}</p>
+                                            <p class="pageText">{{page.text}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="editIcon">
+                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="selectedIcon">
+                                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="deleteIcon">
+                                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div><!-- /#originalPageSearchResult -->
+
+                <div class="uv_box_btnBox" uv-toggle="{target:'wrapper',class:'closeSearchResult',removeCls:'closeBinder'}">
+                    <i data-placement="top" data-toggle="tooltip" class="fa fa-times fa-fw uvSearchResultMinIcon"></i>
+                    <i data-placement="top" data-toggle="tooltip" class="fa fa-expand fa-fw uvSearchResultMaxIcon"></i>
+                </div>
+
+            </div><!-- /#searchResult -->
+
+            <!-- ========================================
+                    バインダー
+                 ======================================== -->
+            <div id="binder" class="uv_bdrBox">
+
+                <div id="binderHeader" class="box-header" ng-cloak>
+
+                    <div class="row">
+                        <p><span translate="originalPage.selectedPages.title"></span></p>
+                        <p><span ng-bind="binderPagesLength"></span><span translate="originalPage.selectedPages.suffix"></span></p>
+                    </div>
+                    <p><button id="unselectBinderPagesButton" class="btn btn-outline btn-primary" type="button"><i class="fa fa-share-square-o fa-fw"></i><span translate="originalPage.selectedPages.remove_all"></span></button></p>
+                    <p class="bainderTtl">
+                        <span ng-bind="VS.sharedStore.binder.title"></span>
+                        <button id="editBinderButton" class="btn btn-outline btn-primary" type="button"><i class="fa fa-pencil fa-fw"></i><span translate="originalPage.selectedPages.button_edit"></span></button>
+                        <button id="saveBinderButton" class="btn btn-outline btn-primary" type="button"><i class="fa fa-save fa-fw"></i><span translate="originalPage.selectedPages.button_save"></span></button>
+                    </p>
+                    <p class="flrbtn">
+                        <a href="../media/pdfs/annotation/{{VS.sharedStore.binder.id}}" target="_blank"><button class="btn btn-outline btn-primary" type="button"><i class="fa fa-print fa-fw"></i><span translate="originalPage.selectedPages.button_print"></span></button></a>
+                        <a href="../media/data/binder/{{VS.sharedStore.binder.id}}" target="_blank"><button class="btn btn-outline btn-primary" type="button"><i class="fa fa-file-text-o fa-fw"></i><span translate="originalPage.selectedPages.button_output"></span></button></a>
+                    </p>
+                    <p class="sortingBox">
+                        <span translate="originalPage.selectedPages.label_order"></span> <input id="moveBinderPageInput" type="text" ng-model="VS.dstIndex"> <button id="moveBinderPageButton" class="btn btn-outline btn-primary" type="button" translate="originalPage.selectedPages.button_order"></button>
+                    </p>
+                    <p>
+                        <button id="smallBinderPagesButton" class="btn btn-outline btn-primary" type="button" translate="originalPage.selectedPages.button_small"></button>
+                        <button id="middleBinderPagesButton" class="btn btn-outline btn-primary" type="button" translate="originalPage.selectedPages.button_middle"></button>
+                        <button id="largeBinderPagesButton" class="btn btn-outline btn-primary" type="button" translate="originalPage.selectedPages.button_large"></button>
+                    </p>
+
+                </div>
+
+                <div id="binderContents">
+                    <ul id="binderPagesArea" class="middle"
+                        ng-model="VS.sharedStore.binder.binderPages"
+                        ui-sortable="sortableOptions"
+                        ng-cloak>
+                        <li class="binderPage pagePanel"
+                            ng-repeat="page in VS.sharedStore.binder.binderPages"
+                            data-original-page-id="{{page.originalPageId}}" data-index="{{$index}}"
+                            ui-sortable-selectable>
+                            <div id="bpSelectArea{{page.id}}" class="selectArea">
+                                <div class="pageImagePanel">
+                                    <div id="binderPage{{page.originalPageId}}" class="contain page pageImage" uv-load-background-image="{{page.thumbUrl}}"></div>
+                                    <div id="binderPageOverlay{{page.originalPageId}}" class="overlay">
+                                        <div id="binderPageOverlayContents" class="overlayContents">
+                                            <p class="pageTitle">{{page.title}}</p>
+                                            <p class="pageText">{{page.text}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="editIcon">
+                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="deleteIcon">
+                                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="pageNumber">
+                                        <span class="badge" ng-bind="page.pageNo"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /#binderContents -->
+
+                <!-- Toggle button -->
+                <div class="uv_box_btnBox" uv-toggle="{target:'wrapper',class:'closeBinder',removeCls:'closeSearchResult'}">
+                    <i data-placement="top" data-toggle="tooltip" class="fa fa-times fa-fw uvBinderMinIcon"></i>
+                    <i data-placement="top" data-toggle="tooltip" class="fa fa-expand fa-fw uvBinderMaxIcon"></i>
+                </div><!-- /Toggle button -->
+
+            </div><!-- /#binder -->
+

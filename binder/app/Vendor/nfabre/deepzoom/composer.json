@@ -1,0 +1,19 @@
+{
+    "name": "nfabre/deepzoom",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Fabre",
+            "email": "nicolas.fabre@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.8"
+    },
+    "autoload": {
+        "psr-0": {
+            "Deepzoom": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,41 @@
+
+            <div id="breadcrumb_list">
+                <ol class="breadcrumb">
+                    <li translate="binder.breadcrumb"></li>
+                </ol>
+            </div>
+
+            <div id="binderSearchResult" class="results" ng-cloak>
+                <ul id="bindersArea" class="middle">
+                    <li class="binder pagePanel" ng-repeat="binder in VS.sharedStore.binders" data-binder-id="{{binder.id}}" data-index="{{$index}}">
+                        <div class="pageImagePanel">
+                            <div id="page{{binder.id}}" class="contain page pageImage" uv-load-background-image="{{binder.thumbUrl}}"></div>
+                            <div id="overlay{{binder.id}}" class="overlay">
+                                <div id="binderOverlayContents" class="overlayContents">
+                                    <p class="pageTitle">{{binder.title}}</p>
+                                    <p class="pageText">{{binder.text}}</p>
+                                </div>
+                            </div>
+                            <div class="deleteIcon">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <script type="text/ng-template" id="confirmDeleteModal.html">
+                <div class="modal-header">
+                    <h3 class="modal-title" translate="binder.delete_modal.title"></h3>
+                </div>
+                <div class="modal-body">
+                    <span translate="binder.delete_modal.body"></span>
+                    <ul>
+                        <li><span translate="binder.delete_modal.label_title"></span>：<span ng-bind="binder.title"></span></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" ng-click="ok()" translate="binder.delete_modal.button_delete"></button>
+                    <button class="btn btn-warning" ng-click="cancel()" translate="binder.delete_modal.button_cancel"></button>
+                </div>
+            </script>

@@ -1,0 +1,24 @@
+/**
+ * Created on 2015/02/20.
+ */
+'use strict';
+
+var servername = '<!--#echo var="SERVER_NAME"-->';
+
+var rooturl = "http://" + location.hostname + "/binder/";
+var loginurl = "http://" + location.hostname + "/binder/login/";
+var logouturl = "http://" + location.hostname + "/binder/login/logout/";
+var imagedir = "http://" + location.hostname + "/binder/media/download";
+
+var UNIVERSALVIEWER = UNIVERSALVIEWER || {};
+
+UNIVERSALVIEWER.Config = {
+    rootUrl: rooturl,
+    loginUrl: loginurl,
+    logoutUrl: logouturl,
+    imageDir: imagedir,
+    largeThumb: 'large/',
+    middleThumb: 'middle/',
+    smallThumb: 'small/',
+    opensadragonPrefixUrl: 'app/webroot/lib/openseadragon/images/'
+};

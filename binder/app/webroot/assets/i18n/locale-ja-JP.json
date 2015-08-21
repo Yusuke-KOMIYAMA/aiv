@@ -1,0 +1,329 @@
+{
+    "integration_server":{
+        "name": "統合システム"
+    },
+    "application":{
+        "name": "ユニバーサルビューアー Universal Viewer"
+    },
+    "header":{
+        "logout": "ログアウト"
+	"loginuser": "ログインユーザー"
+    },
+    "home":{
+        "title":"ホーム",
+        "change_user":"ユーザー変更",
+        "search_image":{
+            "title": "画像検索",
+            "label_all":"検索対象",
+            "label_title":"タイトル",
+            "label_text":"本文",
+            "label_tag":"タグ",
+            "button_search":"検索"
+        },
+        "search_binderPage":{
+            "title": "バインダー（アノテーション）検索",
+            "label_all":"検索対象",
+            "label_title":"タイトル",
+            "label_text":"本文",
+            "label_tag":"タグ",
+            "label_annotation":"アノテーション",
+            "button_search":"検索"
+        },
+        "search_timeline":{
+            "button_search":"TIMELINE検索"
+        },
+        "create_page":{
+            "button":"ページ作成"
+        },
+        "create_binder":{
+            "button":"バインダ作成"
+        }
+    },
+    "originalPage":{
+        "title":"オリジナルページ検索結果",
+        "breadcrumb":"オリジナルページ検索結果",
+        "search_result":{
+            "title":"検索結果",
+            "suffix":"件",
+            "select_all":"全選択",
+            "button_small":"小",
+            "button_middle":"中",
+            "button_large":"大"
+        },
+        "selectedPages":{
+            "title":"ページ数",
+            "suffix":"件",
+            "remove_all":"全選択解除",
+            "button_edit":"バインダー編集",
+            "button_save":"保存",
+            "button_print":"印刷",
+            "button_output":"出力",
+            "label_order":"順番変更",
+            "button_order":"ページの後ろへ移動",
+            "button_small":"小",
+            "button_middle":"中",
+            "button_large":"大"
+        },
+        "message":{
+            "not_save_binder":"先にバインダーを保存してください",
+            "delete_original_page":"オリジナルページを削除してよろしいですか？"
+        }
+    },
+    "originalPageDetail":{
+        "title":"オリジナルページ詳細",
+        "breadcrumb":"オリジナルページ詳細",
+        "meta02":{
+            "header":"メタ情報",
+            "header02":"（2）",
+            "pageNo":"ページ番号",
+            "title":"タイトル",
+            "text":"本文",
+            "creator":"作成者",
+            "confirmor":"確認者",
+            "creation_date":"作成日",
+            "tag":"タグ",
+            "data_size":"データ容量",
+            "width":"幅",
+            "height":"高さ",
+            "format":"フォーマット"
+        },
+        "meta01":{
+            "header":"メタ情報",
+            "header02":"（1）",
+            "pageNo":"ページ番号",
+            "title":"タイトル",
+            "text":"本文",
+            "creator":"作成者",
+            "confirmor":"確認者",
+            "creation_date":"作成日",
+            "tag":"タグ",
+            "data_size":"データ容量",
+            "width":"幅",
+            "height":"高さ",
+            "format":"フォーマット"
+        },
+        "control":{
+            "button_save":"保存",
+            "button_download":"画像ダウンロード",
+            "button_print":"印刷"
+        },
+        "modal":{
+            "title":"アノテーション",
+            "label_title":"タイトル",
+            "label_text":"本文",
+            "label_url":"URL",
+            "button_ok":"OK",
+            "button_cancel":"Cancel"
+        }
+    },
+    "binderPage":{
+        "title":"バインダーページ検索結果",
+        "breadcrumb":"バインダーページ検索結果",
+        "search_result":{
+            "title":"検索結果",
+            "suffix":"件"
+        }
+    },
+    "binderPageDetail":{
+        "title":"バインダーページ詳細",
+        "breadcrumb":"バインダーページ詳細",
+        "annotation": {
+            "redo": "REDO",
+            "undo": "UNDO",
+            "control": {
+                "move": "画像移動",
+                "ellipse": "図形：丸",
+                "rect": "図形：四角",
+                "arrow": "図形：矢印",
+                "line": "図形：線",
+                "comment": "コメント"
+            },
+            "line": {
+                "solid": "線種：実線",
+                "dotted": "線種：点線",
+                "bold": "太さ：太い",
+                "normal": "太さ：標準",
+                "narrow": "太さ：細い"
+            },
+            "pattern": {
+                "title": "パターン",
+                "01": "カラー：赤　線種：実線　太さ：標準",
+                "02": "カラー：青　線種：点線　太さ：細い",
+                "03": "カラー：黄色　線種：実線　太さ：太い"
+            },
+            "color": "カラー",
+            "delete": "全削除",
+            "view": {
+                "show": "表示中",
+                "hidden": "非表示"
+            }
+        },
+        "meta03":{
+            "header":"メタ情報",
+            "header02":"（3）",
+            "pageNo":"ページ番号",
+            "title":"タイトル",
+            "text":"本文",
+            "creator":"作成者",
+            "confirmor":"確認者",
+            "creation_date":"作成日",
+            "tag":"タグ",
+            "data_size":"データ容量",
+            "width":"幅",
+            "height":"高さ",
+            "format":"フォーマット"
+        },
+        "meta02":{
+            "header":"メタ情報",
+            "header02":"（2）",
+            "pageNo":"ページ番号",
+            "title":"タイトル",
+            "text":"本文",
+            "creator":"作成者",
+            "confirmor":"確認者",
+            "creation_date":"作成日",
+            "tag":"タグ",
+            "data_size":"データ容量",
+            "width":"幅",
+            "height":"高さ",
+            "format":"フォーマット"
+        },
+        "meta01":{
+            "header":"メタ情報",
+            "header02":"（1）",
+            "pageNo":"ページ番号",
+            "title":"タイトル",
+            "text":"本文",
+            "creator":"作成者",
+            "confirmor":"確認者",
+            "creation_date":"作成日",
+            "tag":"タグ",
+            "data_size":"データ容量",
+            "width":"幅",
+            "height":"高さ",
+            "format":"フォーマット"
+        },
+        "comment":{
+            "header":"コメント",
+            "title":"タイトル",
+            "text":"本文",
+            "url":"URL",
+            "button_change":"変更"
+        },
+        "control":{
+            "button_save":"保存",
+            "button_download":"画像ダウンロード",
+            "button_print":"印刷",
+            "button_output":"出力"
+        },
+        "modal":{
+            "title":"アノテーション",
+            "label_title":"タイトル",
+            "label_text":"本文",
+            "label_url":"URL",
+            "button_ok":"OK",
+            "button_cancel":"Cancel"
+        }
+    },
+    "timeline":{
+        "title":"タイムライン検索",
+        "breadcrumb":"タイムライン検索"
+    },
+    "binder": {
+        "default": {
+            "title": "名称未設定",
+            "text": "本文未設定2"
+        },
+        "modal":{
+            "title":"バインダー",
+            "label_title":"バインダー",
+            "label_text":"本文",
+            "label_tag":"タグ"
+        },
+        "delete_modal":{
+            "title":"バインダー削除確認",
+            "body":"バインダーを削除します。よろしいですか？",
+            "label_title":"タイトル",
+            "button_delete":"削除",
+            "button_cancel":"キャンセル"
+        },
+        "breadcrumb":"メイン"
+    },
+    "upload":{
+        "title":"アップロード",
+        "header_title":"アップロード",
+        "button":{
+            "upload":"アップロード",
+            "file_upload":"ファイルを選択",
+            "folder_upload":"ディレクトリを選択",
+            "more_upload":"更にファイルをアップロードする"
+        },
+        "message":{
+            "uploading":"アップロード中です",
+            "uploaded":"アップロード完了",
+            "uploaded_with_error":"アップロード完了（エラーがあります）",
+            "drag_and_drop":"ここにファイルを Drag & Drop してください。"
+        },
+        "table":{
+            "number":"#",
+            "file_name":"ファイル名",
+            "thumbnail":"サムネイル",
+            "title":"タイトル",
+            "content":"本文",
+            "creator":"作成者",
+            "confirmor":"確認者",
+            "creation_date":"作成日",
+            "tag":"タグ",
+            "file_size":"ファイルサイズ",
+            "state":"状態"
+        }
+    },
+    "login":{
+        "title":"ログイン",
+        "sso_login":"統合システムIDでログイン",
+        "local_login":{
+            "title":"独自認証",
+            "id":{
+                "label":"ID",
+                "placeholder":"ID"
+            },
+            "password":{
+                "label":"PW",
+                "placeholder":"Password"
+            },
+            "submit_form":"送信",
+            "message": {
+                "0001":"ログインに失敗しました。"
+            }
+        },
+        "nouser":{
+            "title":"ユーザー情報が登録されていません|ログイン",
+            "message":"ユーザー情報が登録されていません。管理者にお問い合わせください。",
+            "link":"戻る"
+        },
+        "logout":{
+            "title":"ログアウト",
+            "message":"ログアウトしました。",
+            "link":{
+                "sso":"続けて統合システムログアウトへ",
+                "local":"ログイン画面へ"
+            }
+        },
+        "error":{
+            "title":"エラー|ログイン",
+            "message":"セッション切れなどの理由により、エラーが発生しました。再度ログインを試してください。エラーが頻発する場合は管理者にお問い合わせください。",
+            "link":"戻る"
+        }
+    },
+    "imageViewer":{
+        "popup":{
+            "close":"閉じる",
+            "edit":"編集",
+            "delete":"削除",
+            "confirm_delete":"選択したアノテーションを削除しますか？"
+        }
+    },
+    "message":{
+        "confirm_move_page":"保存されていないデータがあります。このまま移動してよろしいですか？"
+    }
+}
