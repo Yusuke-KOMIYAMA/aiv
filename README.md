@@ -2,6 +2,8 @@
 This repository only distributes a source code of Annotation Image Viewer for a developer. If you are an end user that need the detail information about AIV tools, please visit our home page.
 [RegMed Home](http://regmed.hgc.jp)
 
+http://regmed.hgc.jp
+
 # Annotation Image Viewer
 Annotation Image Viewer (AIV) is a Web-based image annotation tool. It can store a high-resolution figure, and view scale-free slide smooth. This tool includes a rich user interface for graphical annotation such as shape of a line, circle, rectangle and color pallet. This viewer has an easy administration tools for user management. Additionally you can describe a annotated information for an image as metadata.
 ![Annotation Image Viewer](https://regmed.hgc.jp/figure/coverview1.png "Annotation Image Viewer")
