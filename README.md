@@ -1,12 +1,12 @@
 # NOTICE
-This repository only distributes a source code of Annotation Image Viewer for a developer. If you are an end user that need the detail information about AIV tools, please visit our home page.
+This repository only distributes a source code of Image Annotation Viewer for a developer. If you are an end user that need the detail information about IAV tools, please visit our home page.
 [RegMed Home](http://regmed.hgc.jp)
 
 http://regmed.hgc.jp
 
-# Annotation Image Viewer
-Annotation Image Viewer (AIV) is a Web-based image annotation tool. It can store a high-resolution figure, and view scale-free slide smooth. This tool includes a rich user interface for graphical annotation such as shape of a line, circle, rectangle and color pallet. This viewer has an easy administration tools for user management. Additionally you can describe a annotated information for an image as metadata.
-![Annotation Image Viewer](https://regmed.hgc.jp/figure/coverview1.png "Annotation Image Viewer")
+# Image Annotation Viewer
+Image Annotation Viewer (IAV) is a Web-based image annotation tool. It can store a high-resolution figure, and view scale-free slide smooth. This tool includes a rich user interface for graphical annotation such as shape of a line, circle, rectangle and color pallet. This viewer has an easy administration tools for user management. Additionally you can describe a annotated information for an image as metadata.
+![Image Annotation Viewer](https://regmed.hgc.jp/figure/coverview1.png "Image Annotation Viewer")
 
 ---
 
@@ -107,7 +107,7 @@ $ sudo /etc/rc.d/init.d/docker start
 
 ---
 
-# Common process of remote installation for Annotation Image Viewer from Docker Hub
+# Common process of remote installation for Image Annotation Viewer from Docker Hub
 * C-0. Register your account into Docker Hub.
 https://registry.hub.docker.com/
 
@@ -166,7 +166,7 @@ $ docker stop CONTAINER_ID
 
 ---
 
-# Common process of local installation for Annotation Image Viewer from Docker Images of TAR file
+# Common process of local installation for Image Annotation Viewer from Docker Images of TAR file
 
 * C'-1. If you encounter the message of "Cannot connect to the Docker daemon. Is 'docker -d' running on this host?" then you execute next command.
 
@@ -189,7 +189,7 @@ $ docker load -i /YOUR/FILE/PATH/AnnotationImageViewer_latest.tar
 $ docker images
 ```
 
-* C'-5. Set a human redable tag to the loaded AIV image.
+* C'-5. Set a human redable tag to the loaded IAV image.
 
 ```
 $ docker tag IMAGE_ID komiyama/binder:latest
