@@ -148,6 +148,7 @@ $ docker ps -a
 ```
 
 * C-7. Accese http://HOSTNAME:PORT/binder/login/ via a browser.
+
 Example: http://192.168.59.103:10080/binder/login/
 
 * C-8. Default user accounts were registered as each user roles. 
