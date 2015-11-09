@@ -61,7 +61,7 @@ $ boot2docker ip
  * [https://github.com/boot2docker/windows-installer/releases](https://github.com/boot2docker/windows-installer/releases)
  * (Boot2Docker, Boot2Docker Management Tool, Docker, VirtualBox, msysGit are installed)
 * W-2. Start Boot2Docker from start menu.
-* W-3. Make a note of the IP address of DOCKER_HOST displayed at the time of starting. 
+* W-3. Make a note of the IP address and port of DOCKER_HOST displayed at the time of starting. 
 
 ---
 
@@ -147,8 +147,8 @@ $ docker images
 $ docker ps -a
 ```
 
-* C-7. Accese http://HOSTNAME/binder/login/ via a browser.
-Default: http://192.168.59.103/binder/login/
+* C-7. Accese http://HOSTNAME:PORT/binder/login/ via a browser.
+Example: http://192.168.59.103:10080/binder/login/
 
 * C-8. Default user accounts were registered as each user roles. 
 
@@ -175,7 +175,7 @@ $ export $(boot2docker shellinit)
 ```
 
 * C'-2. Download the TAR file of container image of annotation image viewer from our Web site.
-https://regmed.hgc.jp/docker/AnnotationImageViewer_latest.tar
+https://regmed.hgc.jp/docker/ImageAnnotationViewer_latest.tar
 
 * C'-3. Load the TAR file in to your docker.
 
@@ -207,8 +207,8 @@ $ docker run -t -i -d -p 80:80 --name binder komiyama/binder
 $ docker ps -a
 ```
 
-* C'-8. Accese http://DOCKER_HOST/binder/login/ via a browser. 
- * Default: http://192.168.59.103/binder/login/
+* C'-8. Accese http://DOCKER_HOST:PORT/binder/login/ via a browser. 
+ * Example: http://192.168.59.103:10080/binder/login/
 
 * C'-9. Default user accounts were registered as each user roles. 
  * Administrator: (ID:admin, Password:adminadmin)

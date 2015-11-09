@@ -24346,3 +24346,2524 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
 
 )
 
+2015-11-04 18:07:00 Debug: Array
+(
+    [User] => Array
+        (
+            [id] => 1
+            [userName] => admin
+            [laboratoryId] => 1
+            [ssoLoginID] => admin
+            [localLoginID] => admin
+            [localLoginPassword] => adminadmin
+            [allowLocalLogin] => 1
+            [penID] => 1
+            [dataDir] => 1
+            [authority] => 9
+            [available] => 1
+            [displayName] => admin
+        )
+
+)
+
+2015-11-04 18:11:03 Debug: Array
+(
+    [User] => Array
+        (
+            [id] => 2
+            [userName] => user1
+            [laboratoryId] => 1
+            [ssoLoginID] => user1
+            [localLoginID] => user1
+            [localLoginPassword] => useruser
+            [allowLocalLogin] => 1
+            [penID] => 2
+            [dataDir] => 
+            [authority] => 0
+            [available] => 1
+            [displayName] => user1
+        )
+
+)
+
+2015-11-04 18:11:04 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-04 18:11:04 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-04 18:11:04 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-04 18:11:04 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-04 18:38:08 Debug: Array
+(
+    [User] => Array
+        (
+            [id] => 2
+            [userName] => user1
+            [laboratoryId] => 1
+            [ssoLoginID] => user1
+            [localLoginID] => user1
+            [localLoginPassword] => useruser
+            [allowLocalLogin] => 1
+            [penID] => 2
+            [dataDir] => 
+            [authority] => 0
+            [available] => 1
+            [displayName] => user1
+        )
+
+)
+
+2015-11-04 18:38:09 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-04 18:38:09 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-04 18:38:09 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-04 18:38:09 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-04 18:38:20 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-04 18:38:20 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-04 18:38:20 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-04 18:38:20 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-04 18:38:20 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-05 17:59:22 Debug: Array
+(
+    [User] => Array
+        (
+            [id] => 2
+            [userName] => user1
+            [laboratoryId] => 1
+            [ssoLoginID] => user1
+            [localLoginID] => user1
+            [localLoginPassword] => useruser
+            [allowLocalLogin] => 1
+            [penID] => 2
+            [dataDir] => 
+            [authority] => 0
+            [available] => 1
+            [displayName] => user1
+        )
+
+)
+
+2015-11-05 17:59:23 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-05 17:59:23 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-05 17:59:23 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-05 17:59:23 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-05 17:59:34 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-05 18:19:44 Debug: Array
+(
+    [User] => Array
+        (
+            [id] => 2
+            [userName] => user1
+            [laboratoryId] => 1
+            [ssoLoginID] => user1
+            [localLoginID] => user1
+            [localLoginPassword] => useruser
+            [allowLocalLogin] => 1
+            [penID] => 2
+            [dataDir] => 
+            [authority] => 0
+            [available] => 1
+            [displayName] => user1
+        )
+
+)
+
+2015-11-05 18:19:44 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-05 18:19:44 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-05 18:19:44 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-05 18:19:44 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-05 18:19:50 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-05 18:19:50 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-05 18:19:50 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-05 18:19:50 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-05 18:19:50 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:11 Debug: Array
+(
+    [User] => Array
+        (
+            [id] => 2
+            [userName] => user1
+            [laboratoryId] => 1
+            [ssoLoginID] => user1
+            [localLoginID] => user1
+            [localLoginPassword] => useruser
+            [allowLocalLogin] => 1
+            [penID] => 2
+            [dataDir] => 
+            [authority] => 0
+            [available] => 1
+            [displayName] => user1
+        )
+
+)
+
+2015-11-09 11:09:12 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:09:12 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:12 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:12 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:17 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:09:17 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:17 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:17 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:20 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:09:20 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:20 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:20 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:21 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:09:27 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:09:27 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:09:27 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:27 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:27 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:36 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:09:36 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:36 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:36 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:38 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:09:38 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:38 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:38 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:47 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:09:47 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:09:47 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:47 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:47 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:50 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:09:50 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:50 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:09:50 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:14:21 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:14:21 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:14:21 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:14:21 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:14:28 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:14:32 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:14:51 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:15:13 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:15:13 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:15:13 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:15:13 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:29:41 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:29:41 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:29:41 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:29:41 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:29:47 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:29:47 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:29:47 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:29:47 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:29:58 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:29:58 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:29:58 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:29:58 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:29:58 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:31:56 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:31:56 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:31:56 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:31:56 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:32:15 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:32:15 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:32:15 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:32:15 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:33:05 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:33:05 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:33:05 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:33:05 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:33:10 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:35:37 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:35:37 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:35:37 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:35:37 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:35:45 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:38:00 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:38:00 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:38:00 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:00 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:00 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:04 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:38:04 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:38:04 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:04 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:04 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:07 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:38:07 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:38:07 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:07 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:07 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:11 Debug: Array
+(
+    [log] => Array
+        (
+        )
+
+    [count] => 0
+    [time] => 
+)
+
+2015-11-09 11:38:11 Debug: Array
+(
+    [fields] => Array
+        (
+            [0] => DISTINCT VTag.id AS id
+            [1] => VTag.tag AS tag
+        )
+
+    [conditions] => Array
+        (
+            [VTag.userId] => 2
+        )
+
+)
+
+2015-11-09 11:38:11 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:11 Debug: Array
+(
+    [0] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 3
+                    [tag] => neko
+                )
+
+        )
+
+    [1] => Array
+        (
+            [VTag] => Array
+                (
+                    [id] => 6
+                    [tag] => NASA
+                )
+
+        )
+
+)
+
+2015-11-09 11:38:11 Debug: Array
+(
+    [Tag] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [text] => neko
+                )
+
+            [1] => Array
+                (
+                    [id] => 6
+                    [text] => NASA
+                )
+
+        )
+
+)
+
