@@ -3080,3 +3080,864 @@ Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
 Stack Trace:
 #0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-11-04 18:03:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'userId' cannot be null
+Request URL: /binder/users
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/html/binder/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `bi...', Array)
+#2 /var/www/html/binder/lib/Cake/Model/Datasource/DboSource.php(1010): DboSource->execute('INSERT INTO `bi...')
+#3 /var/www/html/binder/lib/Cake/Model/Model.php(1855): DboSource->create(Object(Log), Array, Array)
+#4 /var/www/html/binder/app/Model/Log.php(79): Model->save(Array, false, Array)
+#5 /var/www/html/binder/app/Controller/UsersController.php(191): Log->write('0001', NULL, 'user list')
+#6 [internal function]: UsersController->index()
+#7 /var/www/html/binder/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-11-04 18:03:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'userId' cannot be null
+Request URL: /binder/users
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/html/binder/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `bi...', Array)
+#2 /var/www/html/binder/lib/Cake/Model/Datasource/DboSource.php(1010): DboSource->execute('INSERT INTO `bi...')
+#3 /var/www/html/binder/lib/Cake/Model/Model.php(1855): DboSource->create(Object(Log), Array, Array)
+#4 /var/www/html/binder/app/Model/Log.php(79): Model->save(Array, false, Array)
+#5 /var/www/html/binder/app/Controller/UsersController.php(191): Log->write('0001', NULL, 'user list')
+#6 [internal function]: UsersController->index()
+#7 /var/www/html/binder/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-11-04 18:11:03 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 18:11:03 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 18:38:08 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 18:38:08 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 17:59:22 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 17:59:22 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 17:59:23 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 18:19:44 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 18:19:44 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:09:11 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:09:11 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:09:12 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:20 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:09:20 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:09:20 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:23 Error: [MissingActionException] Action UploadController::downloadlarge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadlarge',
+)
+Request URL: /binder/media/downloadlarge/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:23 Error: [MissingActionException] Action UploadController::downloadlarge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadlarge',
+)
+Request URL: /binder/media/downloadlarge/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:23 Error: [MissingActionException] Action UploadController::downloadlarge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadlarge',
+)
+Request URL: /binder/media/downloadlarge/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:27 Error: [MissingActionException] Action UploadController::download20150713_55a36bd10d6aa.dzi() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'download20150713_55a36bd10d6aa.dzi',
+)
+Request URL: /binder/media/download20150713_55a36bd10d6aa.dzi
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:28 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:28 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:28 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:33 Error: [MissingActionException] Action UploadController::downloadlarge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadlarge',
+)
+Request URL: /binder/media/downloadlarge/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:33 Error: [MissingActionException] Action UploadController::downloadlarge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadlarge',
+)
+Request URL: /binder/media/downloadlarge/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:33 Error: [MissingActionException] Action UploadController::downloadlarge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadlarge',
+)
+Request URL: /binder/media/downloadlarge/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:38 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:09:38 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:09:38 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:42 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:42 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:42 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:47 Error: [MissingActionException] Action UploadController::download20150713_55a36bd10d6aa.dzi() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'download20150713_55a36bd10d6aa.dzi',
+)
+Request URL: /binder/media/download20150713_55a36bd10d6aa.dzi
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:48 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:48 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:09:48 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:20 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:14:20 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:14:21 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:24 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:24 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:24 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:32 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:32 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:32 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20151109_5640010b8e060.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:53 Error: [MissingActionException] Action UploadController::downloadlarge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadlarge',
+)
+Request URL: /binder/media/downloadlarge/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:53 Error: [MissingActionException] Action UploadController::downloadlarge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadlarge',
+)
+Request URL: /binder/media/downloadlarge/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:14:53 Error: [MissingActionException] Action UploadController::downloadlarge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadlarge',
+)
+Request URL: /binder/media/downloadlarge/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:40 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:29:40 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:29:41 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:44 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:44 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:44 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:47 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:29:47 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:29:48 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:55 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:55 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:55 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:58 Error: [MissingActionException] Action UploadController::download20150709_559df692a28ef.dzi() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'download20150709_559df692a28ef.dzi',
+)
+Request URL: /binder/media/download20150709_559df692a28ef.dzi
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:59 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:59 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:29:59 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:31:53 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:31:53 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:31:56 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:32:07 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/openseadragon/openseadragon.min.js.map
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:32:13 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150713_55a36bd10d6aa.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:32:13 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:32:13 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:33:05 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:33:05 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:33:05 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/openseadragon/openseadragon.min.js.map
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:33:05 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:33:10 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20151109_564005dce03e8.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:33:11 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150709_559df692a28ef.jpeg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:33:11 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20151109_5640010b8e060.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:33:11 Error: [MissingActionException] Action UploadController::downloadsmall() could not be found.
+Exception Attributes: array (
+  'controller' => 'UploadController',
+  'action' => 'downloadsmall',
+)
+Request URL: /binder/media/downloadsmall/20150716_55a770db40360.jpg
+Stack Trace:
+#0 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/binder/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediaController), Object(CakeRequest))
+#2 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-09 11:35:36 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:35:36 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/angularstrap/angular-strap.tpl.min.js
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-09 11:35:36 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /binder/lib/openseadragon/openseadragon.min.js.map
+Stack Trace:
+#0 /var/www/html/binder/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

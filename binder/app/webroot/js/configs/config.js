@@ -3,13 +3,18 @@
  */
 'use strict';
 
+var rooturl = "http://" + location.host + "/binder/";
+var loginurl = "http://" + location.host + "/binder/login/";
+var logouturl = "http://" + location.host + "/binder/login/logout/";
+var imagedir = "http://" + location.host + "/binder/media/download/";
+
 var UNIVERSALVIEWER = UNIVERSALVIEWER || {};
 
 UNIVERSALVIEWER.Config = {
-    rootUrl: "http://192.168.59.103/binder/",
-    loginUrl: "http://192.168.59.103/binder/login/",
-    logoutUrl: "http://192.168.59.103/binder/login/logout/",
-    imageDir: "http://192.168.59.103/binder/media/download/",
+    rootUrl: rooturl,
+    loginUrl: loginurl,
+    logoutUrl: logouturl,
+    imageDir: imagedir,
     largeThumb: 'large/',
     middleThumb: 'middle/',
     smallThumb: 'small/',
