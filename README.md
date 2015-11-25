@@ -138,7 +138,7 @@ $ docker images
 * C-5. Start a container as a daemon and assign HTTP port to the contaier.
 
 ```
-* $ docker run -t -i -d -p 80:80 --name binder komiyama/binder
+* $ docker run -t -i -d -p 10080:80 --name binder komiyama/binder
 ```
 
 * C-6. Check a sturted container.
@@ -198,7 +198,7 @@ $ docker tag IMAGE_ID komiyama/binder:latest
 * C'-6. Start a container as a daemon and assign HTTP port to the container.
 
 ```
-$ docker run -t -i -d -p 80:80 --name binder komiyama/binder
+$ docker run -t -i -d -p 10080:80 --name binder komiyama/binder
 ```
 
 * C'-7. Check a sturted container.
