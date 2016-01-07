@@ -1,5 +1,7 @@
 ## OpenIAV (image annotation viewer)
 
+---
+
 #### SIGNIFICANCE
 OpenIAV (image annotation viewer) is an open source Web-based image annotation platform for data share and archive in a biomedical laboratory.
 
@@ -13,8 +15,10 @@ OpenIAV (image annotation viewer) is a Web-based image annotation tool. It can s
 ---
 
 #### NOTICE
-This repository only distributes the source code of OpenIAV for a developer, if you are an end-user that need a detail information about usage, please visit our website.
+* This repository only distributes the source code of OpenIAV for a developer, if you are an end-user that need a detail information about usage, please visit our website.
 [RegMed project](http://regmed.hgc.jp)
+
+* We are distributing [the virtual contaner of OpenIAV on the Docker Hub](https://hub.docker.com/r/komiyama/binder/).
 
 ---
 
