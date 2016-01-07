@@ -157,8 +157,9 @@ $ brew upgrade
 ```
  $ docker ps -a
 ```
+
 * C'-8. Access http://DOCKER_HOST:PORT/binder/login/ via a browser. 
-```
+
 Example: http://192.168.59.103:10080/binder/login/
 
 * C'-9. Default user accounts were registered as each user roles. 
