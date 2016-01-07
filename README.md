@@ -1,14 +1,7 @@
-### OpenIAV (image annotation viewer)
+## OpenIAV (image annotation viewer)
 
 #### SIGNIFICANCE
 OpenIAV (image annotation viewer) is an open source Web-based image annotation platform for data share and archive in a biomedical laboratory.
-
----
-
-#### NOTICE
-This repository only distributes the source code of OpenIAV for a developer, if you are an end-user that need a detail information about usage, please visit our website.
-[RegMed project](http://regmed.hgc.jp)
-http://regmed.hgc.jp
 
 ---
 
@@ -16,6 +9,12 @@ http://regmed.hgc.jp
 OpenIAV (image annotation viewer) is a Web-based image annotation tool. It can store a high-resolution figure, and view scale-free slide smooth. This tool includes a rich user interface for graphical annotation such as shape of a line, circle, rectangle, and color pallet. Additionally, you can describe a annotated information for an image as metadata. Detail information of this tools was provided at [RegMed project](https://regmed.hgc.jp/) .
 
 ![OpenIAV](https://regmed.hgc.jp/figure/coverview1.png "OpenIAV")
+
+---
+
+#### NOTICE
+This repository only distributes the source code of OpenIAV for a developer, if you are an end-user that need a detail information about usage, please visit our website.
+[RegMed project](http://regmed.hgc.jp)
 
 ---
 
@@ -50,6 +49,7 @@ $ brew upgrade
 ```
  $ boot2docker ip
 ```
+
 ---
 #####  Preparation of Docker for Windows
 * W-1. Install application of "Windows Docker Client".
@@ -135,7 +135,8 @@ $ brew upgrade
 ```
  $ export $(boot2docker shellinit)
 ```
-* C'-2. Download the TAR file of container image of annotation image viewer from our Web site.https://regmed.hgc.jp/docker/ImageAnnotationViewer_latest.tar.gz
+* C'-2. Download the TAR file of container image of annotation image viewer from our Web site.
+ * https://regmed.hgc.jp/docker/ImageAnnotationViewer_latest.tar.gz
 * C'-3. Load the TAR file in to your docker.
 ```
  $ docker load -i /YOUR/FILE/PATH/AnnotationImageViewer_latest.tar.gz
@@ -171,10 +172,10 @@ Example: http://192.168.59.103:10080/binder/login/
  $ docker stop CONTAINER_ID
 ```
 
-
 ---
+
 #### USAGE
-#####  Usage and detail information
- Please visit [the RegMed project Web site](https://regmed.hgc.jp/aiv.html).
+##### Usage and detail information
+ Please visit [the RegMed project Web site](https://regmed.hgc.jp/aiv.html) .
 
 
